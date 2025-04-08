@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: #76b8ff;
+}
+
+header {
+    background: #eb9411;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: rgb(4, 3, 3);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px; /* Adjust the spacing between items as needed */
+}
+
+a {
+    text-decoration: none;
+    color: black; /* Adjust the link color as needed */
+}
+.hidden {
+    display: none;
+}
+
+section {
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+video, canvas {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+#makeup-gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+#makeup-gallery h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around; /* Spaces out items evenly */
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    gap: 20px; /* Space between gallery items */
+}
+
+.gallery-item {
+    text-align: center;
+    width: 200px; /* Set a fixed width for gallery items */
+}
+
+.gallery-item img {
+    width: 100%; /* Makes images fit the container */
+    height: auto; /* Keeps the image aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+}
+
+.gallery-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+#captureBtn, #shareBtn {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+}
+
+#captureBtn:hover, #shareBtn:hover {
+    background-color: #005bb5;
+}

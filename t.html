@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Mirror</title>
+    <link rel="stylesheet" href="pq.css">
+</head>
+<body>
+    <header>
+        <h1>Virtual Mirror Web App</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="loginLink"> Login  </a></li>
+                <li><a href="#" id="registerLink"> Register </a></li>
+                <li><a href="#" id="tryOnLink"> Try-On </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section id="loginSection" class="hidden">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Register Section -->
+    <section id="registerSection" class="hidden">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <label for="registerName">Name:</label>
+            <input type="text" id="registerName" required>
+            <label for="registerEmail">Email:</label>
+            <input type="email" id="registerEmail" required>
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" required>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Try-On Section -->
+    <section id="tryOnSection" class="hidden">
+        <h2>Virtual Try-On</h2>
+        <video id="cameraFeed" autoplay></video>
+        <button id="captureBtn">Capture</button>
+        <canvas id="photoCanvas"></canvas>
+        <button id="shareBtn">Share</button>
+
+        <!-- Clothing Gallery -->
+    <div id="clothing-gallery" class="gallery">
+        <h2>Try On Clothes</h2>
+        <div class="gallery">
+                    <div class="gallery-item" onclick="tryClothing('One Piece')">
+                        <img src="C:\Users\91777\Desktop\sanuu\VM\static\one piece.jpg" alt="One Piece">
+                        <h3>One Piece</h3>
+                    </div>
+                   <div class="gallery-item" onclick="tryClothing('Garara')">
+                        <img src="C:\Users\91777\Desktop\sanuu\VM\static\garara.jpg" alt="Garara">
+                        <h3>Garara</h3>
+                    </div>
+                  <div class="gallery-item" onclick="tryClothing('Lehenga')">
+                        <img src="C:\Users\91777\Desktop\sanuu\VM\static\lehenga.jpg" alt="Lehenga">
+                        <h3>Lehenga</h3>
+                    </div>
+             <div class="gallery-item" onclick="tryClothing('Skirt-Top')">
+                        <img src="C:\Users\91777\Desktop\sanuu\VM\static\skirt.jpg" alt="Skirt-Top">
+                        <h3>Skirt-Top</h3>
+                    </div>
+            <div class="gallery-item" onclick="tryClothing('Trouser-Suit')">
+                        <img src="C:\Users\91777\Desktop\sanuu\VM\static\trouser suit.jpg" alt="Trouser-Suit">
+                        <h3>Trouser-Suit</h3>
+                    </div>
+           <div class="gallery-item" onclick="tryClothing('Classic-Suit')">
+                        <img src="C:\Users\91777\Desktop\sanuu\VM\static\suit.jpg" alt="Classic-Suit">
+                        <h3>Classic-Suit</h3>
+                    </div>
+            <div class="gallery-item" onclick="tryClothing('Kurta')">
+                        <img src="C:\Users\91777\Desktop\sanuu\VM\static\kurta.jpg" alt="Kurta">
+                        <h3>Kurta</h3>
+                    </div>
+   
+           <div class="gallery-item" onclick="tryClothing('Jacket')">
+                        <img src="C:\Users\91777\Desktop\sanuu\VM\static\jacket.jpg" alt="Jacket">
+                        <h3>Jacket</h3>
+                    </div>
+            <div class="gallery-item" onclick="tryClothing('Formal-Ware')">
+                        <img src="C:\Users\91777\Desktop\sanuu\VM\static\fd.jpg" alt="Formal-Ware">
+                        <h3>Formal-Ware</h3>
+                    </div>
+                </div>
+    <!-- Makeup Gallery -->
+    <div id="makeup-gallery" class="gallery">
+        <h2>Try On Makeup</h2>
+        <div class="gallery-item" onclick="tryMakeup('Lipstick')">
+            <img src="C:\Users\91777\Desktop\sanuu\VM\static\lipstick.jpg" alt="Lipstick">
+            <h3>Lipstick</h3>
+        </div>
+        <div class="gallery-item" onclick="tryMakeup('Blush')">
+            <img src="C:\Users\91777\Desktop\sanuu\VM\static\blush.jpg" alt="Blush">
+            <h3>Blush</h3>
+        </div>
+        <div class="gallery-item" onclick="tryMakeup('Eyeliner')">
+            <img src="C:\Users\91777\Desktop\sanuu\VM\static\eyeliner.png" alt="Eyeliner">
+            <h3>Eyeliner</h3>
+        </div>
+        <div class="gallery-item" onclick="tryMakeup('Foundation')">
+            <img src="C:\Users\91777\Desktop\sanuu\VM\static\foundation.jpg" alt="Foundation">
+            <h3>Foundation</h3>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+    <script src="rs.js"></script>
+</body>
+</html>
+
